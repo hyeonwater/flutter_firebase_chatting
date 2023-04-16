@@ -56,20 +56,24 @@ class _ChatPageState extends State<ChatPage> {
                             mainAxisAlignment: _chat[index]['uid'] == user.currentUser!.uid ?MainAxisAlignment.end : MainAxisAlignment.start,
                             children: [
                               UnconstrainedBox(
-                                child: Container(
-                                    width: mediaHeight(context, 0.3),
-                                    padding: EdgeInsets.all(mediaHeight(context, 0.01)),
-                                    margin: EdgeInsets.symmetric(vertical: mediaHeight(context, 0.005)),
-                                    decoration: BoxDecoration(
-                                        color: _chat[index]['uid'] == user.currentUser!.uid ? Colors.blue : Colors.grey,
-                                        borderRadius: BorderRadius.only(
-                                            topRight: const Radius.circular(12),
-                                            topLeft: const Radius.circular(12),
-                                            bottomRight: _chat[index]['uid'] == user.currentUser!.uid ? const Radius.circular(0) :  const Radius.circular(12),
-                                            bottomLeft: _chat[index]['uid'] == user.currentUser!.uid ? const Radius.circular(12) :  const Radius.circular(0)
-                                        )
-                                    ),
-                                    child: Text(_chat[index]['text'],style: CustomTextStyle.w300(context,color: Colors.white),)),
+                                child: Row(
+                                  children: [
+                                    Container(
+                                        width: mediaHeight(context, 0.3),
+                                        padding: EdgeInsets.all(mediaHeight(context, 0.01)),
+                                        margin: EdgeInsets.symmetric(vertical: mediaHeight(context, 0.005)),
+                                        decoration: BoxDecoration(
+                                            color: _chat[index]['uid'] == user.currentUser!.uid ? Colors.blue : Colors.grey,
+                                            borderRadius: BorderRadius.only(
+                                                topRight: const Radius.circular(12),
+                                                topLeft: const Radius.circular(12),
+                                                bottomRight: _chat[index]['uid'] == user.currentUser!.uid ? const Radius.circular(0) :  const Radius.circular(12),
+                                                bottomLeft: _chat[index]['uid'] == user.currentUser!.uid ? const Radius.circular(12) :  const Radius.circular(0)
+                                            )
+                                        ),
+                                        child: Text(_chat[index]['text'],style: CustomTextStyle.w300(context,color: Colors.white),)),
+                                  ],
+                                ),
                               ),
                             ],
                           ),

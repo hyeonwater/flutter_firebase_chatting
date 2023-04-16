@@ -45,12 +45,7 @@ mixin CustomTextStyle implements TextStyle{
   static const String _family6 = 'Pretendard-Bold';
   static const TextDecoration _decoration = TextDecoration.none;
 
-  static TextStyle appBarStyle(BuildContext context, {double? scale, Color? color}) => TextStyle(
-      fontWeight: FontWeight.w600,
-      fontSize: mediaHeight(context, scale ?? 0.023),
-      color: color ?? _appBarColor,
-      fontFamily: _family3
-  );
+
   static TextStyle w100(BuildContext context, {double? scale, double? height, Color? color, String? fontFamily, TextDecoration? decoration,Color? decorationColor,double? decorationThickness}) => TextStyle(
       fontWeight: FontWeight.w100,
       fontSize: mediaHeight(context, scale ?? _scale),
@@ -60,7 +55,6 @@ mixin CustomTextStyle implements TextStyle{
       decoration: decoration ?? _decoration,
       decorationColor: decorationColor ?? _color,
       decorationThickness: decorationThickness ?? 0
-
   );
   static TextStyle w200(BuildContext context, {double? scale, double? height, Color? color, String? fontFamily, TextDecoration? decoration,Color? decorationColor,double? decorationThickness}) => TextStyle(
       fontWeight: FontWeight.w200,
@@ -71,8 +65,6 @@ mixin CustomTextStyle implements TextStyle{
       decoration: decoration ?? _decoration,
       decorationColor: decorationColor ?? _color,
       decorationThickness: decorationThickness ?? 0
-
-
   );
   static TextStyle w300(BuildContext context, {double? scale, double? height, Color? color, String? fontFamily, TextDecoration? decoration,Color? decorationColor,double? decorationThickness}) => TextStyle(
       fontWeight: FontWeight.w300,
@@ -83,8 +75,6 @@ mixin CustomTextStyle implements TextStyle{
       decoration: decoration ?? _decoration,
       decorationColor: decorationColor ?? _color,
       decorationThickness: decorationThickness ?? 0
-
-
   );
   static TextStyle w400(BuildContext context, {double? scale, double? height, Color? color, String? fontFamily, TextDecoration? decoration,Color? decorationColor,double? decorationThickness}) => TextStyle(
       fontWeight: FontWeight.w400,
@@ -95,8 +85,6 @@ mixin CustomTextStyle implements TextStyle{
       decoration: decoration ?? _decoration,
       decorationColor: decorationColor ?? _color,
       decorationThickness: decorationThickness ?? 0
-
-
   );
   static TextStyle w500(BuildContext context, {double? scale, double? height, Color? color, String? fontFamily, TextDecoration? decoration,Color? decorationColor,double? decorationThickness}) => TextStyle(
       fontWeight: FontWeight.w500,
@@ -107,7 +95,6 @@ mixin CustomTextStyle implements TextStyle{
       decoration: decoration ?? _decoration,
       decorationColor: decorationColor ?? _color,
       decorationThickness: decorationThickness ?? 0
-
   );
   static TextStyle w600(BuildContext context, {double? scale, double? height, Color? color, String? fontFamily, TextDecoration? decoration,Color? decorationColor,double? decorationThickness}) => TextStyle(
       fontWeight: FontWeight.w600,
@@ -118,8 +105,6 @@ mixin CustomTextStyle implements TextStyle{
       decoration: decoration ?? _decoration,
       decorationColor: decorationColor ?? _color,
       decorationThickness: decorationThickness ?? 0
-
-
   );
   static TextStyle w700(BuildContext context, {double? scale, double? height, Color? color, String? fontFamily, TextDecoration? decoration,Color? decorationColor,double? decorationThickness}) => TextStyle(
       fontWeight: FontWeight.w700,
@@ -130,8 +115,6 @@ mixin CustomTextStyle implements TextStyle{
       decoration: decoration ?? _decoration,
       decorationColor: decorationColor ?? _color,
       decorationThickness: decorationThickness ?? 0
-
-
   );
   static TextStyle w800(BuildContext context, {double? scale, double? height, Color? color, String? fontFamily, TextDecoration? decoration,Color? decorationColor,double? decorationThickness}) => TextStyle(
       fontWeight: FontWeight.w800,
@@ -142,8 +125,6 @@ mixin CustomTextStyle implements TextStyle{
       decoration: decoration ?? _decoration,
       decorationColor: decorationColor ?? _color,
       decorationThickness: decorationThickness ?? 0
-
-
   );
   static TextStyle w900(BuildContext context, {double? scale, double? height, Color? color, String? fontFamily, TextDecoration? decoration,Color? decorationColor,double? decorationThickness}) => TextStyle(
       fontWeight: FontWeight.w900,
@@ -154,7 +135,5 @@ mixin CustomTextStyle implements TextStyle{
       decoration: decoration ?? _decoration,
       decorationColor: decorationColor ?? _color,
       decorationThickness: decorationThickness ?? 0
-
-
   );
 }

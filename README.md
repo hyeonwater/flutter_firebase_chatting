@@ -1,16 +1,12 @@
-# chatting_app_clone
+# 직면한 문제
 
-A new Flutter project.
+1. 앱에 Firestore만 연결하고 데이터를 CRUD 할 수 있을거라 생각했지만 Firestore 규칙을 수정하여 인증된 사용자만 할 수 있게 했습니다.
+2. 앱 사용의 데이터를 줄이기 위해 프로필사진을 cached 이미지로 하였지만 이미지 변경 시 캐쉬때문에 이미지가 변경이 안되어 캐쉬를 사용하지 않았습니다. 
+3. FirebaseAuth로는 회원가입이 잘되어 이메일과 비밀번호를 받아왔지만 사용자의 이름을 구글 로그인 말고 받아오지 못했습니다.
 
-## Getting Started
+# 아쉬운 기능
+1. 상태관리를 Provider로 사용하고 싶었지만 Firebase랑 직접 연결을해서 상태관리를 따로하지 못하였습니다.
+2. 메세지를 보낼때 Firestore에 Timestamp를 같이 보냅니다. 보낸 Timestamp를 메세지 내용과 같이 출력 하고 싶었습니다.
+3. 메세지 내용 별로 컨테이너 사이즈를 조절하고 싶었습니다.
+4. 사용자를 추가 하여 그 사용자랑만 채팅을 만들어 보고 싶습니다. 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
